@@ -51,3 +51,10 @@ pagaris.ref = 'ref'
 
 document.querySelector('body').append(pagaris)
 ```
+
+---
+
+## Examples for different tech stacks
+
+- [WooCommerce](https://github.com/pagaris/placement/wiki/Woocommerce)
+- [Shopify](https://github.com/pagaris/placement/wiki/Shopify)
