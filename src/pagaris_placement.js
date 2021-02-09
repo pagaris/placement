@@ -5,12 +5,6 @@ class PagarisPlacement extends HTMLElement {
     return ['amount', 'ref']
   }
 
-  setRootFontSize() {
-    const link = document.createElement('link')
-    link.innerHTML = 'html, body, btn { font-size: 16px !important; }'
-    this.shadowRoot?.querySelector('head')?.append(link)
-  }
-
   setShadowDom() {
     // Event handling in `connectedCallback()` will make it visible.
     this.style.visibility = 'hidden'
@@ -34,7 +28,6 @@ class PagarisPlacement extends HTMLElement {
       const shadow = this.shadowRoot || this.attachShadow({ mode: 'open' })
       shadow.innerHTML = ''
       shadow.append(doc.querySelector('html'))
-      this.setRootFontSize()
 
       // (Re)insert scripts to Shadow DOM, so that they are evaluated
       const scriptsSelector = 'script[src], script[data-insert-to-shadow]'
