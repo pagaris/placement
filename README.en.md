@@ -2,10 +2,9 @@
 
 Pagaris button (widget) that can be included in websites (e.g. a product or checkout page) to show buyers how they can use Pagaris to pay their purchase in monthly installments.
 
-
 # Demo
 
-[TODO]
+See [demo/demo.html](demo/demo.html)
 
 # Features
 
@@ -19,7 +18,7 @@ Pagaris button (widget) that can be included in websites (e.g. a product or chec
 
 In each page or layout in which you want to show the button (e.g. "product", "cart" or "checkout"):
 
-1. Add `<script src=[TODO]>` to include the needed JS file
+1. Add `<script src="https://cdn.jsdelivr.net/gh/pagaris/placement/src/pagaris_placement.js"></script>` to include the needed JS file
 2. Add an `<pagaris-placement>` element where you wish to show the button. You can add one or more buttons per page (e.g. search page or category page with multiple products)
 3. Add the `amount` attribute to specify the product price or cart total in MXN (Mexican pesos)
 4. Add the `ref` attribute to add merchant branding to the added button and content. This will be assigned by Pagaris, so you can contact us by email or chat to help you
@@ -27,7 +26,7 @@ In each page or layout in which you want to show the button (e.g. "product", "ca
 #### Example
 
 ```html
-<script src="[TODO]" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/pagaris/placement/src/pagaris_placement.js" defer></script>
 <pagaris-placement amount="5800.95" ref="[referrer code]">
 </pagaris-placement>
 ```
