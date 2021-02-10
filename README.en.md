@@ -4,6 +4,7 @@ Pagaris button (widget) that can be included in websites (e.g. a product or chec
 
 # Demo
 
+![Demo](demo/demo.gif)
 See [demo/demo.html](demo/demo.html)
 
 # Features

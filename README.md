@@ -4,6 +4,7 @@ Botón (widget) de Pagaris que puede ser agregado a sitios web (ej. en una pági
 
 # Demo
 
+![Demo](demo/demo.gif)
 Ver [demo/demo.html](demo/demo.html)
 
 # Funciones
