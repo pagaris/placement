@@ -1,6 +1,20 @@
-[Ver en español](README.md)
+[Ver README en español](README.md)
 
-Pagaris button (widget) that can be included in websites (e.g. a product or checkout page) to show buyers how they can use Pagaris to pay their purchase in monthly installments.
+# Pagaris Smart Button
+
+This guide will help you add the Pagaris Smart Button to your online store, so you can show your buyers that they can use Pagaris to pay their purchase in monthly installments with any card, even a debit one.
+
+This button shows general info. about Pagaris and can show examples of monthly installments plans for a given amount.
+
+We recommend that you show the button in the following pages:
+
+- Product
+- Cart
+- Checkout
+
+## Support
+
+If you have any questions or would like to get a referrer code, please contact us in the chat of our website ([pagaris.com](https://pagaris.com)), or send an email to info@pagaris.com. Also, feel free to open an issue in this repository.
 
 # Demo
 

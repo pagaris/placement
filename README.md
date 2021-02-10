@@ -1,6 +1,20 @@
-[English docs](README.en.md)
+[See README in English here](README.en.md)
 
-Botón (widget) de Pagaris que puede ser agregado a sitios web (ej. en una página de producto o de checkout) para mostrar a compradores que pueden usar Pagaris para pagar su compra a meses.
+# Botón Inteligente de Pagaris
+
+Esta guía te ayudará a agregar el Botón Inteligente de Pagaris a tu tienda en línea, para mostrar a tus compradores que pueden usar Pagaris para pagar su compra a meses con cualquier tarjeta, incluso si es de débito.
+
+Este botón muestra información general de Pagaris, y puede cotizar las opciones de pagos mensuales para la cantidad en cuestión.
+
+Te recomendamos que muestres el botón en las siguientes páginas:
+
+- Producto
+- Carrito de compras
+- Checkout
+
+## Soporte
+
+Si tienes dudas o deseas obtener un código de referente, contáctanos en el chat de nuestro sitio ([pagaris.com](https://pagaris.com)), o con un mail a info@pagaris.com. También puedes abrir un Issue en este repositorio.
 
 # Demo
 
@@ -13,16 +27,16 @@ Ver [demo/demo.html](demo/demo.html)
 2. Si se agrega un monto (ej. precio unitario de un producto o total de un carrito):
   - Se puede validar si es un monto que podría financiarse en Pagaris. Si no lo es, no se muestra nada
   - Se puede dar una cotización que ejemplifica cómo podría quedar un crédito en Pagaris para este monto
-3. Si existe y se agrega un referente, el contenido mostrado puede incluir branding del comercio
+3. Si se agrega un código de referente, el contenido mostrado puede incluir branding del comercio
 
 # Uso
 
 Para cada página o layout (ej. "producto", "carrito" o "checkout") en la que desees mostrar el botón de Pagaris:
 
-1. Agrega `<script src="https://cdn.jsdelivr.net/gh/pagaris/placement/src/pagaris_placement.js"></script>` para incluir el archivo de Javascript necesario
+1. Agrega `<script src="https://cdn.jsdelivr.net/gh/pagaris/placement/src/pagaris_placement.js"></script>` para incluir el archivo JS necesario
 2. Agrega el elemento `<pagaris-placement>` donde desees que se agregue el botón de Pagaris. Se pueden agregar uno o múltiples botones en una página (ej. para una página de búsqueda o de categoría en donde aparecen múltiples productos)
 3. Agrega el atributo `amount` que especifique el monto del producto o carrito en pesos
-4. Agrega el atributo `ref` para que el contenido esté brandeado con el nombre y logo de tu comercio. Este será asignado por Pagaris, puedes contactarnos por email o chat para revisarlo.
+4. Agrega el atributo `ref` para que el contenido esté brandeado con el nombre y logo de tu comercio. Este será asignado por Pagaris. Puedes contactarnos por email o chat para revisarlo.
 
 #### Ejemplo
 
