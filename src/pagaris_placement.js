@@ -13,8 +13,9 @@ class PagarisPlacement extends HTMLElement {
     this._ref = this.getAttribute('ref')
 
     let params = {
-      utm_source: window.location.href,
-      utm_medium: 'placement'
+      utm_medium: 'placement',
+      utm_campaign: 'placement',
+      utm_source: window.location.href
     }
     if (this._amount) params.amount = this._amount
     if (this._ref) params.ref = this._ref
