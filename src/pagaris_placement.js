@@ -45,7 +45,7 @@ class PagarisPlacement extends HTMLElement {
       if (button) {
         button.addEventListener('click', () => {
           document.dispatchEvent(new CustomEvent('placementButtonClick', {
-            detail: {shadow}
+            detail: { shadow, ref: this._ref }
           }))
 
           // Move backrop to shadow root instead of parent DOM
