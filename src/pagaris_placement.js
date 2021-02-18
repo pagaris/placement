@@ -67,7 +67,7 @@ class PagarisPlacement extends HTMLElement {
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
-    if (this._amount == undefined) return // called before connectedCallback()
+    if (this._connectedCallbackCalled == undefined) return
     this.setShadowDom()
   }
 
@@ -77,6 +77,7 @@ class PagarisPlacement extends HTMLElement {
     })
 
     this.setShadowDom()
+    this._connectedCallbackCalled = true
   }
 
   get amount() {
