@@ -28,6 +28,7 @@ See [demo/demo.html](demo/demo.html)
   - It's validated to check if it can be financed by Pagaris. If it isn't nothing is shown.
   - One or more example loan offers can be shown
 3. If a valid referrer (`ref`) is given, the shown content can include the merchant's name and logo
+4. A (text) link can be shown instad of a button. It serves the same purpose as the button, i.e. it shows more info. about Pagaris when clicked.
 
 # Usage
 
@@ -45,6 +46,10 @@ In each page or layout in which you want to show the button (e.g. "product", "ca
 <pagaris-placement amount="5800.95" ref="[referrer code]">
 </pagaris-placement>
 ```
+
+### Format
+
+If you want to show a link instead of a button, add the `format="light"` attribute to the `<pagaris-placement>` element. If this attribute is not included, or its value is different than `light`, a button will be shown (default behavior).
 
 ### Change amount dynamically
 

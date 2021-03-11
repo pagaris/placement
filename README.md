@@ -28,6 +28,7 @@ Ver [demo/demo.html](demo/demo.html)
   - Se puede validar si es un monto que podría financiarse en Pagaris. Si no lo es, no se muestra nada
   - Se puede dar una cotización que ejemplifica cómo podría quedar un crédito en Pagaris para este monto
 3. Si se agrega un código de referente, el contenido mostrado puede incluir branding del comercio
+4. Puede mostrarse un link (texto) en lugar de un botón. Cumple la misma función de explicar Pagaris al hacer clic.
 
 # Uso
 
@@ -45,6 +46,10 @@ Para cada página o layout (ej. "producto", "carrito" o "checkout") en la que de
 <pagaris-placement amount="5800.95" ref="[código de referente asignado]">
 </pagaris-placement>
 ```
+
+### Formato
+
+Si deseas mostrar un link en lugar de un botón, puedes agregar el atributo `format="light"` al elemento `<pagaris-placement>`. Si no se incluye este atributo o su valor es distinto a `light`, se mostrará un botón (comportamiento por defecto).
 
 ### Cambiar monto dinámicamente
 

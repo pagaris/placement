@@ -2,7 +2,7 @@ const baseUrl = 'https://pagaris.com/placement?'
 
 class PagarisPlacement extends HTMLElement {
   static get observedAttributes() {
-    return ['amount', 'ref']
+    return ['amount', 'ref', 'format']
   }
 
   setShadowDom() {
@@ -11,6 +11,7 @@ class PagarisPlacement extends HTMLElement {
 
     this._amount = this.getAttribute('amount')
     this._ref = this.getAttribute('ref')
+    this._format = this.getAttribute('format')
 
     let params = {
       utm_medium: 'placement',
@@ -19,6 +20,7 @@ class PagarisPlacement extends HTMLElement {
     }
     if (this._amount) params.amount = this._amount
     if (this._ref) params.ref = this._ref
+    if (this._format) params.format = this._format
     params = new URLSearchParams(params)
     const url = baseUrl + params.toString()
 
@@ -41,7 +43,7 @@ class PagarisPlacement extends HTMLElement {
 
       // Fix modal: Trigger an event when toggling button is clicked, which
       // will be catched in source (Pagaris).
-      const button = shadow.querySelector('button[data-toggle=modal]')
+      const button = shadow.querySelector('button[data-toggle=modal], a#modal-link')
       if (button) {
         button.addEventListener('click', () => {
           document.dispatchEvent(new CustomEvent('placementButtonClick', {
@@ -94,6 +96,14 @@ class PagarisPlacement extends HTMLElement {
 
   set ref(val) {
     return this.setAttribute('ref', val)
+  }
+
+  get format() {
+    return this.getAttribute('format')
+  }
+
+  set format(val) {
+    return this.setAttribute('format', val)
   }
 }
 
