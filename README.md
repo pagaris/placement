@@ -34,7 +34,7 @@ Ver [demo/demo.html](demo/demo.html)
 
 Para cada página o layout (ej. "producto", "carrito" o "checkout") en la que desees mostrar el botón de Pagaris:
 
-1. Agrega `<script src="https://cdn.jsdelivr.net/gh/pagaris/placement/src/pagaris_placement.js"></script>` para incluir el archivo JS necesario
+1. Agrega `<script src="https://cdn.jsdelivr.net/gh/pagaris/placement/src/pagaris_placement.min.js"></script>` para incluir el archivo JS necesario.
 2. Agrega el elemento `<pagaris-placement>` donde desees que se agregue el botón de Pagaris. Se pueden agregar uno o múltiples botones en una página (ej. para una página de búsqueda o de categoría en donde aparecen múltiples productos)
 3. Agrega el atributo `amount` que especifique el monto del producto o carrito en pesos
 4. Agrega el atributo `ref` para que el contenido esté brandeado con el nombre y logo de tu comercio. Este será asignado por Pagaris. Puedes contactarnos por email o chat para revisarlo.
