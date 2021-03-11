@@ -42,7 +42,7 @@ In each page or layout in which you want to show the button (e.g. "product", "ca
 #### Example
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/pagaris/placement/src/pagaris_placement.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/pagaris/placement/src/pagaris_placement.min.js" defer></script>
 <pagaris-placement amount="5800.95" ref="[referrer code]">
 </pagaris-placement>
 ```

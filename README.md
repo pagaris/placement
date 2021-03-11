@@ -42,7 +42,7 @@ Para cada página o layout (ej. "producto", "carrito" o "checkout") en la que de
 #### Ejemplo
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/pagaris/placement/src/pagaris_placement.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/pagaris/placement/src/pagaris_placement.min.js" defer></script>
 <pagaris-placement amount="5800.95" ref="[código de referente asignado]">
 </pagaris-placement>
 ```
