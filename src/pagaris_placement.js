@@ -1,17 +1,18 @@
-const baseUrl = 'https://pagaris.com/placement?'
-
 class PagarisPlacement extends HTMLElement {
   static get observedAttributes() {
-    return ['amount', 'ref', 'format']
+    return ['amount', 'ref', 'format', 'skip-modal']
   }
 
   setShadowDom() {
+    const baseUrl = 'https://pagaris.com/placement?'
+
     // Event handling in `connectedCallback()` will make it visible.
     this.style.visibility = 'hidden'
 
     this._amount = this.getAttribute('amount')
     this._ref = this.getAttribute('ref')
     this._format = this.getAttribute('format')
+    this._skipModal = this.hasAttribute('skip-modal')
 
     let params = {
       utm_medium: 'placement',
@@ -21,6 +22,7 @@ class PagarisPlacement extends HTMLElement {
     if (this._amount) params.amount = this._amount
     if (this._ref) params.ref = this._ref
     if (this._format) params.format = this._format
+    if (this._skipModal) params.skip_modal = 'true'
     params = new URLSearchParams(params)
     const url = baseUrl + params.toString()
 
@@ -104,6 +106,14 @@ class PagarisPlacement extends HTMLElement {
 
   set format(val) {
     return this.setAttribute('format', val)
+  }
+
+  get skipModal() {
+    return this.getAttribute('skip-modal')
+  }
+
+  set skipModal(val) {
+    return this.setAttribute('skip-modal', val)
   }
 }
 
