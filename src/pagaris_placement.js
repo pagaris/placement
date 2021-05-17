@@ -77,7 +77,7 @@ class PagarisPlacement extends HTMLElement {
 
   connectedCallback() {
     document.addEventListener('placementLoaded', () => {
-      setTimeout(() => { this.style.visibility = 'visible' }, 300)
+      setTimeout(() => { this.style.visibility = 'visible' }, 700)
     })
 
     this.setShadowDom()
