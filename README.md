@@ -2,7 +2,7 @@
 
 # Botón Inteligente de Pagaris
 
-Esta guía te ayudará a agregar el Botón Inteligente de Pagaris a tu tienda en línea, para mostrar a tus compradores que pueden usar Pagaris para pagar su compra a meses con cualquier tarjeta, incluso si es de débito.
+Esta guía te ayudará a agregar el Botón Inteligente de Pagaris (_placement_) a tu tienda en línea, para mostrar a tus compradores que pueden usar Pagaris para pagar su compra a meses con cualquier tarjeta, incluso si es de débito.
 
 Este botón muestra información general de Pagaris, y puede cotizar las opciones de pagos mensuales para la cantidad en cuestión.
 
@@ -11,6 +11,8 @@ Te recomendamos que muestres el botón en las siguientes páginas:
 - Producto
 - Carrito de compras
 - Checkout
+
+> Te recordamos que Pagaris no aparecerá como un método de pago regular en tu checkout, sino que este botón inteligente sirve para referir a tus compradores, quienes regresarían a pagar a tu tienda en línea con un medio de pago que le proporcionaríamos.
 
 ## Soporte
 

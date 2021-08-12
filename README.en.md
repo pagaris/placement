@@ -2,7 +2,7 @@
 
 # Pagaris Smart Button
 
-This guide will help you add the Pagaris Smart Button to your online store, so you can show your buyers that they can use Pagaris to pay their purchase in monthly installments with any card, even a debit one.
+This guide will help you add the Pagaris Smart Button (_placement_) to your online store, so you can show your buyers that they can use Pagaris to pay their purchase in monthly installments with any card, even a debit one.
 
 This button shows general info. about Pagaris and can show examples of monthly installments plans for a given amount.
 
@@ -11,6 +11,8 @@ We recommend that you show the button in the following pages:
 - Product
 - Cart
 - Checkout
+
+> Note that Pagaris won't show up as a regular payment option in your checkout. Instead, this smart button refers your buyers, which would return to your store and pay you with a payment method that we would provide them.
 
 ## Support
 
