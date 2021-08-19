@@ -4,7 +4,7 @@
  */
 class PagarisPlacement extends HTMLElement {
   static get observedAttributes() {
-    return ['amount', 'ref', 'format', 'skip-modal']
+    return ['amount', 'ref', 'format', 'skip-modal', 'href-value']
   }
 
   setShadowDom() {
@@ -17,6 +17,8 @@ class PagarisPlacement extends HTMLElement {
     this._ref = this.getAttribute('ref')
     this._format = this.getAttribute('format')
     this._skipModal = this.hasAttribute('skip-modal')
+    this._hasHrefValue = this.hasAttribute('href-value')
+    this._hrefValue = this.getAttribute('href-value')
 
     let params = {
       utm_medium: 'placement',
@@ -27,6 +29,7 @@ class PagarisPlacement extends HTMLElement {
     if (this._ref) params.ref = this._ref
     if (this._format) params.format = this._format
     if (this._skipModal) params.skip_modal = 'true'
+    if (this._hasHrefValue) params.href_value = this._hrefValue
     params = new URLSearchParams(params)
     const url = baseUrl + params.toString()
 
@@ -150,6 +153,14 @@ class PagarisPlacement extends HTMLElement {
 
   set skipModal(val) {
     return this.setAttribute('skip-modal', val)
+  }
+
+  get hrefValue() {
+    return this.getAttribute('href-value')
+  }
+
+  set hrefValue(val) {
+    return this.setAttribute('href-value', val)
   }
 }
 
