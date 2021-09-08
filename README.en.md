@@ -40,18 +40,15 @@ In each page or layout in which you want to show the button (e.g. "product", "ca
 2. Add an `<pagaris-placement>` element where you wish to show the button. You can add one or more buttons per page (e.g. search page or category page with multiple products)
 3. Add the `amount` attribute to specify the product price or cart total in MXN (Mexican pesos)
 4. Add the `ref` attribute to add merchant branding to the added button and content. This will be assigned by Pagaris, so you can contact us by email or chat to help you
+5. You can add the `format="light"` attribute if you'd like to show a text instead of a button. It will work in the same way. If this attribute is not included, or its value is different than `light`, a button will be shown (default behavior).
 
 #### Example
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/pagaris/placement/src/pagaris_placement.min.js" defer></script>
-<pagaris-placement amount="5800.95" ref="[referrer code]">
+<pagaris-placement amount="5800.95" ref="[referrer code]" format="light">
 </pagaris-placement>
 ```
-
-### Format
-
-If you want to show a link instead of a button, add the `format="light"` attribute to the `<pagaris-placement>` element. If this attribute is not included, or its value is different than `light`, a button will be shown (default behavior).
 
 ### Change amount dynamically
 

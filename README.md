@@ -40,18 +40,15 @@ Para cada página o layout (ej. "producto", "carrito" o "checkout") en la que de
 2. Agrega el elemento `<pagaris-placement>` donde desees que se agregue el botón de Pagaris. Se pueden agregar uno o múltiples botones en una página (ej. para una página de búsqueda o de categoría en donde aparecen múltiples productos)
 3. Agrega el atributo `amount` que especifique el monto del producto o carrito en pesos
 4. Agrega el atributo `ref` para que el contenido esté brandeado con el nombre y logo de tu comercio. Este será asignado por Pagaris. Puedes contactarnos por email o chat para revisarlo.
+5. Puedes agregar el atributo `format="light"` si deseas que en lugar de un botón, aparezca un texto. Tiene la misma funcionalidad. Si no se incluye este atributo o su valor es distinto a `light`, se mostrará un botón (comportamiento por defecto).
 
 #### Ejemplo
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/pagaris/placement/src/pagaris_placement.min.js" defer></script>
-<pagaris-placement amount="5800.95" ref="[código de referente asignado]">
+<pagaris-placement amount="5800.95" ref="[código de referente asignado]" format="light">
 </pagaris-placement>
 ```
-
-### Formato
-
-Si deseas mostrar un link en lugar de un botón, puedes agregar el atributo `format="light"` al elemento `<pagaris-placement>`. Si no se incluye este atributo o su valor es distinto a `light`, se mostrará un botón (comportamiento por defecto).
 
 ### Cambiar monto dinámicamente
 
